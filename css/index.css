@@ -187,6 +187,8 @@ img {
   justify-content: space-between;
   flex-direction: row;
   flex-wrap: nowrap;
+  margin-top: 50px;
+  border-bottom: 2px dashed lightgray;
 }
 .container.home header h1 {
   justify-content: flex-start;
@@ -196,7 +198,6 @@ img {
   justify-content: space-around;
   flex-direction: row;
   display: flex;
-  border-bottom: 1px dashed gray;
 }
 .container.home header nav a {
   text-decoration: none;
@@ -220,21 +221,22 @@ img {
   height: 70%;
   justify-content: center;
   align-items: center;
+  margin-top: 50px;
 }
-.home .top-part .home {
+.home .top-part.home {
   width: 100%;
-  margin: 30px 0;
+  padding-bottom: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  border-bottom: 2px dashed lightgray;
 }
-.home .top-part .home .top-h2 {
+.home .top-part.home .top-h2 {
   justify-content: flex-start;
   flex-wrap: nowrap;
 }
-.home .top-part .home .top-p {
+.home .top-part.home .top-p {
   flex-wrap: wrap;
-  border-bottom: 1px dashed gray;
 }
 .home .content-section {
   margin: 30px 0;
