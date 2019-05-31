@@ -1,20 +1,37 @@
 // Navigation Styles here
 
-.container .home {
-    //container info
+.container.home {
+    .flex();
+    flex-direction: column;
     header {
-        //header info
+        width: 100%;
+        .flex();
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    
         h1 {
-            //h1 info
+            justify-content: flex-start;
         }
+    
         nav {
-            //nav info
+            width: 60%;
+            justify-content: space-around;
+            flex-direction: row;
+            .flex();
+            border-bottom: 1px dashed gray;
+        
             a {
-                //a info
+                text-decoration: none;
+                color: black;
+                font-size: 1.5rem;
+                align-self: center;
             }
-        }
-        img {
-            //image info
         }
     }
 }
+
+
+
+
+
