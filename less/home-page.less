@@ -11,18 +11,21 @@
 .top-part.home {
     width: 100%;
     padding-bottom: 20px;
-    display: flex;
+    @flex();
     flex-wrap: wrap;
     justify-content: space-between;
     border-bottom: 2px dashed lightgray;
 
     .top-h2 {
-        // width: 45%;
         justify-content: flex-start;
         flex-wrap: nowrap;
     }
     .top-p {
         flex-wrap: wrap;
+        @media @mobile {
+          justify-content: center;
+          align-items: center;
+        }
     }
 
 }
@@ -32,17 +35,28 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    // @media @mobile {
+    //   margin-left: 1rem;
+    // }
 
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        padding-right: 0;
+        margin-left: 1rem;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile {
+        padding-left: 0;
+        margin-left: 1rem;
+      }
 
       img {
         border-radius: 10px;
@@ -83,6 +97,10 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile {
+        margin: 1rem 2rem;
+        justify-content: center;
+      }
 
       .btn {
         .cta-home();

@@ -11,9 +11,19 @@
         flex-wrap: nowrap;
         margin-top: 50px;
         border-bottom: 2px dashed lightgray;
-    
+        @media @mobile {
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
         h1 {
             justify-content: flex-start;
+            @media @mobile {
+                margin-bottom: 10px;
+                // justify-content: center;
+                // align-items: center;
+            }
         }
     
         nav {
@@ -21,12 +31,19 @@
             justify-content: space-around;
             flex-direction: row;
             .flex();
+            @media @mobile {
+                justify-content: center;
+                align-items: center;
+            }
         
             a {
                 text-decoration: none;
                 color: black;
                 font-size: 1.5rem;
                 align-self: center;
+                @media @mobile {
+                    justify-content: center;
+                }
             }
         }
     }
